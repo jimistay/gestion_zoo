@@ -1,0 +1,38 @@
+::before,::after,*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+h2{
+    color: blue;
+}
+
+label{
+    height: auto;
+    width: auto;
+    border-radius: 1px;
+    background-color: blueviolet;
+    color: yellowgreen;
+    display: flex;
+
+}
+input{
+    background-color: rgba(0, 0, 0, 0.219);
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    margin: 2px;
+    border-bottom-style: ridge;
+    border-right-style: ridge;
+    border-left-style: ridge;
+    border-left-width: unset;
+}
+
+div#informations{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

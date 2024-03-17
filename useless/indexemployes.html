@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexemployes.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="HautHeader">
+        <div id="logo"> 
+            <img src="logo.png" id="logoZOO">
+        </div>
+        <div id="titreduZOO">
+            <p id="ZOOtete">Bienvenue Zoo... </p>
+        </div>
+    </header>
+    <div id="menu">
+        <nav>
+			<label for="menu-mobile" class="menu-mobile"><center><h2></h2></center></label>
+			<input type="checkbox" id="menu-mobile" role="button">
+			<ul>
+				<li class="menu-html"><a href="#"><h4>Menu Principal</h4></a></li> <!--/*remplacer par logo ou une image le menu principal*/-->
+				<li class="menu-css"><a href="#"><h4>Gestion des animaux</h4></a>
+					<ul class="submenu">
+						<li><a href="gestoionanimaux/ajoutanimal.html">Ajout d'un annimal</a></li>
+						<li><a href="gestoionanimaux/modificationanimaux.html">Modification des animaux</a></li>
+						<li><a href="gestoionanimaux/rechercheanimal.html">Recherche d'un animal</a></li>
+						<li><a href="gestoionanimaux/supprimeranimal.html">Supprimer un animal</a></li>
+                        <li><a href="gestoionanimaux/affichertouslesanimax.html">Afficher tous les animaux</a></li>
+                        <li><a href="gestoionanimaux/ajoutespece.html">Ajout espèse</a></li>
+                        <li><a href="gestoionanimaux/ajoutenclos.html">Ajout enclos</a></li>
+					</ul>
+				</li>
+				<li class="menu-js"><a href="#"><h4>Déconnexion</h4></a></li>
+				<li class="menu-js"><a href="#"><h4>Contact</h4></a></li>
+			</ul>
+		</nav>
+    </div>
+    <div id="identificationDiv"><br>
+        <p id="textidentification">Bienvenue à toi ..(nom avec php qui doit apparaitre)</p>
+        <p id="textinformation">Merci de le selectionner dans le menu quelles sont les modifcations que vous souhaitez réaliser!</p>
+    </div>
+    <div id="animation">
+        <img src="5.jpg" id="animationphoto">
+    </div>
+    <footer>
+        <br>
+        <p id="remerciments">Merci d'avoir pris le temps de visiter le site!</p>
+    </footer>
+</body>
+</html>

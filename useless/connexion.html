@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="connexion.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2><center>Afin de nous contacter veuillez saisir les informations suivantes</center></h2>
+    <div class="container">
+        <div id="informations">
+            <p>Saisisez vos informations personelles</p>
+            <input type="text" id="nom" placeholder="Saisisez votre nom" />
+            <input type="text" id="prenom" placeholder="Saisisez votre prenom"/>
+        </div>
+        <label for="adresse">Adresse :</label>
+        <input type="text" id="adresse" />
+
+        <label for="mail">Email :</label>
+        <input type="text" id="mail" />
+
+        <label for="numero">Numéro de téléphone : </label>
+        <input type="tel" id="numero" />
+      <div>
+        <label for="petsTrue" id="labelFirst">Animaux acceptes : </label>
+        <input type="radio" name="pets" id="petsTrue" />
+      </div>
+      <div>
+        <label for="petsfalse">Animaux non acceptes : </label>
+        <input type="radio" name="pets" id="petsfalse" />
+      </div>
+
+      <label for="country">Ville :</label>
+      <input type="text" id="country" />
+
+      <label for="type">Type :</label>
+      <select id="type">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+      </select>
+
+      <label for="user">Identifiant :</label>
+      <input type="text" id="user" />
+
+      <label for="password">Mot de passe :</label>
+      <input type="password" id="password" />
+    </div>
+    <footer>
+      <button>Annuler</button>
+      <button>S'inscrire</button>
+    </footer>
+</body>
+</html>

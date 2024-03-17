@@ -1,0 +1,289 @@
+::before,::after,*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Tete de la page*/
+header{
+    background-image: url("banniere.png");
+}
+
+img#logoZOO{
+    height: 100px;
+    width: 100px;
+    margin-top: 5px;
+}
+#HautHeader{
+    background-color: #F9A620;
+    height: 130px;
+    border: #FFD449 solid 10px;
+}
+div#logo{
+    height: 50px;
+    width: 100px;
+    margin-left: 10px;
+}
+div#titreduZOO{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+p#ZOOtete{
+    font-size: 30px;
+    color: #333333;
+    font-weight: bold;
+    font-style: oblique 10deg;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ffff00, 0 0 80px #ffff00, 0 0 90px #ffff00, 0 0 100px #ffff00, 0 0 150px #ffff00;
+    
+}
+@media (max-width: 720px) {
+    header{
+        display: flex;
+        justify-content: center;
+        height: 240px;
+    }
+    
+}
+
+
+/*menu */
+
+nav > ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+nav li{
+	list-style-type: none;
+}
+
+nav > ul > li{
+	float: left;
+}
+
+.submenu{
+	display: none;
+}
+
+nav input[type=checkbox]{
+	display: none;
+}
+
+.menu-mobile{
+	display: none;
+}
+
+nav input[type=checkbox]{
+	display: none;
+}
+
+nav{
+	width: 100%;
+	background-color: #548C2F;
+}
+
+nav > ul > li{
+	float: left;
+	position: relative;
+}
+
+nav > ul::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+nav a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+nav > ul > li > a{
+	padding: 20px 30px;
+	color: #FFF;
+}
+
+nav li:hover .submenu{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 100000;
+}
+
+.submenu li{
+	border-bottom: 1px solid white;
+}
+
+.submenu li a {
+	padding: 15px 30px;
+	font-size: 13px;
+	color: rgb(228, 79, 79);
+	width: 270px;
+    font-style: bold;
+}
+
+.menu-html:hover{
+	border-top: 5px solid #FFD449;
+	background-color: #4c9252;
+}
+
+.menu-css:hover{
+	border-top: 5px solid #FFD449;
+	background-color: #4c9252;
+}
+
+.menu-js:hover{
+	border-top: 5px solid #FFD449;
+	background-color: #4c9252;
+}
+
+.menu-contact:hover{
+	border-top: 5px solid #FFD449;
+	background-color: #4c9252;
+}
+
+nav > ul > li:hover a{
+	padding: 15px 30px 20px 30px;
+}
+
+.menu-html .submenu{
+	background-color: rgb(230, 100, 40);
+}
+.menu-css .submenu{
+	background-color: #283f2a;
+}
+.menu-js .submenu{
+	background-color: #283f2a;
+}
+
+.submenu li:hover a{
+	color:pink;
+	font-weight: bold;
+}
+.menu-html .submenu li:hover{
+	background-color: #548C2F;
+}
+.menu-css .submenu li:hover{
+	background-color: #548C2F;
+}
+.menu-js .submenu li:hover{
+	background-color: #548C2F;
+}
+
+nav input[type=checkbox]:checked ~ ul{
+	display: block;
+}
+
+
+/*Après le menu */
+
+
+
+div#identificationDiv{
+    background-image: url("feuillestomabantes3.png");
+    height: 350px;
+    width: 100%;
+    background-color: #F9A620;
+    border: #FFD449 solid 10px;
+}
+
+p#textidentification{
+    text-decoration: underline;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color:#333333;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ffff00, 0 0 80px #ffff00, 0 0 90px #ffff00, 0 0 100px #ffff00, 0 0 150px #ffff00;
+}
+p#textinformation{
+    font-size: 20px;
+    color: #333333;
+    margin-top: 40px;
+    margin-left: 10px;
+    font-style: oblique;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ffff00, 0 0 80px #ffff00, 0 0 90px #ffff00, 0 0 100px #ffff00, 0 0 150px #ffff00;
+    
+}
+
+div#essai1{
+    height: 100px;
+    width: 100%;
+    color: #b578b5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div#IdentificationDivPhoto{
+    background-color: rgba(0, 0, 255, 0);
+    height: 100px;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-right: 20%;
+}
+
+img#imghumanhands{
+    height: 100px;
+    width: 100px;
+}
+img#imganimalhands{
+    width: 110px;
+    height: 110px;
+}
+p#logoidentification{
+    font-size: 17px;
+    color: #333333;
+    text-decoration: underline overline #dbd5d4;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ffff00, 0 0 80px #ffff00, 0 0 90px #ffff00, 0 0 100px #ffff00, 0 0 150px #ffff00;
+
+}
+div#IdentificationDivPhotoHumans{
+    background-color: rgba(255, 0, 221, 0);
+    height: 100px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+
+
+/*image */
+img#animationphoto{
+    height: 100%;
+    width: 100%;
+}
+
+/*ajouter javascript pour faire défiler les différentes images!!!! */
+
+
+/*Le pieds de la page */
+footer{
+    background-color: #F9A620;
+    height: 100px;
+    border: #FFD449 solid 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+p#remerciments{
+    font-size: 20px;
+    color: #333333;
+    font-style: oblique;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+

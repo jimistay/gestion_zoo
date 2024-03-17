@@ -1,0 +1,80 @@
+form {
+    max-width: 500px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+  
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+  
+input[type=text], input[type=password], textarea, input[type=date] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+  
+input[type=text]:focus, input[type=password]:focus, textarea:focus, input[type=date]:focus {
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 5px #99ff99;
+}
+  
+input[type=submit] {
+    background-color: #55b55a;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+  
+input[type=submit]:hover {
+    background-color: #ff944d;
+}
+  
+input:invalid, textarea:invalid {
+    border: none;
+    background-color: #fee6e6;
+    box-shadow: 0 0 5px #ff9999;
+}
+  
+input:invalid:required, textarea:invalid:required {
+    border: none;
+    background-color: #fee6e6;
+    box-shadow: 0 0 5px #ff9999;
+}
+  
+input:invalid[minlength], input:out-of-range {
+    border: none;
+    background-color: #fee6e6;
+    box-shadow: 0 0 5px #ff9999;
+}
+  
+@media only screen and (max-width: 600px) {
+    form {
+      max-width: 90%;
+      margin: 20px auto;
+      padding: 10px;
+}
+  
+    input[type=submit] {
+      width: 100%;
+    }
+  }
+

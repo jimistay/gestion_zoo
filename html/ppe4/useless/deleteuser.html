@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/ppe4/deleteuser.css">
+  <script src="../../js/tplogin/main.js"></script>
+  <title>Supprimer un compte</title>
+</head>
+<body>
+    <section>
+        <div class="form_box">
+            <div class="form_value">
+                <form action="../../php/ppe4/deleteuser.php" method="post">
+                    <h3>Suppression</h3>
+                    <div class="inputbox">
+                        <input type="text" name="log" id="log" required="required">
+                        <label for="login">Identifiant</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="password" name="pwd" id="pwd" required="required">
+                        <label for="password">Mot de passe :</label>
+                    </div>
+                    <div style="color : #fff ; display: flex ; flex-direction: row; margin-bottom: 10px;">
+                        <input type="checkbox" onclick="viewPwd()">
+                        <p> Afficher le Mot de passe </p>
+                    </div>
+                    <button style="background-color: rgb(228, 186, 186); border: 2px solid rgb(230, 101, 101);" onClick="this.form.submit(); this.disabled=true; this.value='Suppression…'; "><input style="border: none; background: none; cursor: pointer;" type="submit" onClick="this.form.submit(); this.disabled=true; this.value='Suppression…'; " value="Supprimer le Compte (irréversible)"></button>
+                    <div class="register">
+                        <p>Revenir à la page de connection <a href="log.html">ICI</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+    </section>
+</body>
+</html>

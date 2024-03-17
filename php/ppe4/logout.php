@@ -1,0 +1,13 @@
+<?php
+session_start();
+if(isset($_SESSION['deco'])==true){
+    if($_SESSION['deco']==0){
+        header('location:../../unautorized.html');
+        unset($_SESSION['deco']);
+    }
+}else{
+session_unset();
+session_destroy();
+header('location:../../html/ppe4/log.html');
+}
+?>

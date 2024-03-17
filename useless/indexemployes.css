@@ -1,0 +1,223 @@
+::before,::after,*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Tete de la page*/
+img#logoZOO{
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+#HautHeader{
+    background-color: rgb(102, 53, 7);
+    height: 130px;
+}
+div#logo{
+    height: 50px;
+    width: 100px;
+    margin-left: 10px;
+}
+div#titreduZOO{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+p#ZOOtete{
+    font-size: 30px;
+    color: wheat;
+    font-weight: bold;
+    font-style: oblique 10deg;
+    
+}
+@media (max-width: 720px) {
+    header{
+        display: flex;
+        justify-content: center;
+        height: 240px;
+    }
+    
+}
+
+/*menu */
+
+nav > ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+nav li{
+	list-style-type: none;
+}
+
+nav > ul > li{
+	float: left;
+}
+
+.submenu{
+	display: none;
+}
+
+nav input[type=checkbox]{
+	display: none;
+}
+
+.menu-mobile{
+	display: none;
+}
+
+nav input[type=checkbox]{
+	display: none;
+}
+
+nav{
+	width: 100%;
+	background-color: #084d17;
+}
+
+nav > ul > li{
+	float: left;
+	position: relative;
+}
+
+nav > ul::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+nav a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+nav > ul > li > a{
+	padding: 20px 30px;
+	color: #FFF;
+}
+
+nav li:hover .submenu{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 100000;
+}
+
+.submenu li{
+	border-bottom: 1px solid white;
+}
+
+.submenu li a {
+	padding: 15px 30px;
+	font-size: 13px;
+	color: solid red;
+	width: 270px;
+}
+
+.menu-html:hover{
+	border-top: 5px solid red;
+	background-color: rgba(228, 77, 38, 15);
+}
+
+.menu-css:hover{
+	border-top: 5px solid blue;
+	background-color: RGBa(000, 112, 192, 15);
+}
+
+.menu-js:hover{
+	border-top: 5px solid yellow;
+	background-color: RGBa(241, 211, 79, 15);
+}
+
+.menu-contact:hover{
+	border-top: 5px solid blue;
+	background-color: RGBa(220, 220, 220, 0.20);
+}
+
+nav > ul > li:hover a{
+	padding: 15px 30px 20px 30px;
+}
+
+.menu-html .submenu{
+	background-color: rgb(230, 100, 40);
+}
+.menu-css .submenu{
+	background-color: rgb(000, 160, 240);
+}
+.menu-js .submenu{
+	background-color: rgb(251, 216, 99);
+}
+
+.submenu li:hover a{
+	color:pink;
+	font-weight: bold;
+}
+.menu-html .submenu li:hover{
+	background-color: rgb(210, 77, 60);
+}
+.menu-css .submenu li:hover{
+	background-color: rgb(000, 115, 200);
+}
+.menu-js .submenu li:hover{
+	background-color: rgb(200, 165, 75);
+}
+
+nav input[type=checkbox]:checked ~ ul{
+	display: block;
+}
+
+
+/*Après le menu */
+
+div#identificationDiv{
+    height: 300px;
+    width: 100%;
+    background-color: rgb(102, 53, 7);
+}
+
+p#textidentification{
+    color: rgb(8, 8, 8);
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+p#textinformation{
+    font-size: 20px;
+    color: rgb(240, 219, 219);
+    margin-top: 40px;
+    margin-left: 10px;
+    font-style: oblique;
+    
+}
+
+/*image */
+img#animationphoto{
+    height: 100%;
+    width: 100%;
+}
+
+/*ajouter javascript pour faire défiler les différentes images!!!! */
+
+
+/*Le pieds de la page */
+footer{
+    background-color: rgb(102, 53, 7);
+    height: 100px;
+}
+p#remerciments{
+    font-size: 20px;
+    color: rgb(240, 219, 219);
+    font-style: oblique;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
